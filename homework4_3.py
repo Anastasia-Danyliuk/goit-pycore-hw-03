@@ -18,8 +18,8 @@ def normalize_phone(num):
         num = f'+{num}'
     elif not num.startswith('+'):
         num = f'+38{num}'
-
     return num
+
 sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
 print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)
 
